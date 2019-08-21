@@ -9,9 +9,9 @@
 #endif
 
 public class Dataspace {
-    var id: hid_t
+    public var id: hid_t
 
-    init(id: hid_t) {
+    public init(id: hid_t) {
         self.id = id
         guard id >= 0 else {
             fatalError("Failed to create Dataspace")

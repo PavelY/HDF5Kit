@@ -11,7 +11,7 @@
 open class Object {
     public internal(set) var id: hid_t = -1
 
-    init(id: hid_t) {
+    public init(id: hid_t) {
         precondition(id >= 0, "Object ID needs to be non-negative")
         self.id = id
     }
